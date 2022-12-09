@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap')
+
+body, html
+    margin: 0
+    box-sizing: border-box
+    display: flex
+    justify-content: center
+    font-family: 'PT Sans Narrow', sans-serif
+
+.header
+    font-style: roboto
+    text-align: center
+    &__separator
+        height: 2px
+        width: 300px
+        background-color: rgba(black, 0.2)
+        border: none
+.todo
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-size: 20px
+    padding: 5px
+    border-bottom: 1px solid rgba(black, 0.5)
+    &__wrapper
+        display: flex
+        gap: 0 20px
+        align-items: center
+    &__favorite
+        background-color: #FFF5CC
+        & .todo__star
+            color: gold
+    &__star
+        cursor: crosshair
+        background-color: inherit
+        border: none
+        font-size: 27px
+        padding: 7px
+    &__delete
+        cursor: crosshair
+        background-color: inherit
+        border: none
+        font-size: 20px
+        padding: 7px
+.add-todo
+    display: flex
+    border-radius: 15px
+    &__input
+        width: 100%
+        padding: 10px
+        font-size: 17px
+        margin-right: 3%
+        border-radius: 8px
+        border: 2px solid lightgrey
+        outline: none
+        
+    &__btn
+        width: 35%
+        border: none
+        font-size: 20px
+        border-radius: 8px
+        cursor: crosshair
+        background-color: rgb(96,72,254)
+        color: white
